@@ -2,9 +2,14 @@
 
 A [TRMNL](https://usetrmnl.com) private plugin that displays a Bob's Burgers
 "Burger of the Day" on your e-ink device. The burger rotates deterministically
-by date — same date, same burger — across all 416 burgers featured in the show.
+by date — same date, same burger — across all 400+ burgers featured in the show.
 
-Data comes from the community [bobsburgers-api](https://bobsburgers-api.herokuapp.com/).
+## Credits
+
+Data comes from the community [Bob's Burgers API](https://www.bobsburgersapi.com/)
+by [@zachspiel](https://github.com/zachspiel/bobsburgers-api/). If you find this
+plugin useful, please [buy them a coffee](https://buymeacoffee.com/bobsburgersapi)
+— they maintain the API for free.
 
 ## Setup
 
