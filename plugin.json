@@ -1,0 +1,24 @@
+{
+  "name": "Burger of the Day",
+  "description": "Bob's Burgers burger of the day, rotated deterministically by date.",
+  "strategy": "polling",
+  "polling_url": "https://bobsburgers-api.herokuapp.com/burgerOfTheDay",
+  "polling_verb": "GET",
+  "refresh_rate_minutes": 15,
+  "data_source": {
+    "name": "bobsburgers-api",
+    "url": "https://bobsburgers-api.herokuapp.com/",
+    "license": "community / unofficial"
+  },
+  "selection": {
+    "method": "deterministic_by_date",
+    "formula": "(unix_time / 86400) mod 416",
+    "burger_count": 416
+  },
+  "views": {
+    "full": "views/full.liquid",
+    "half_horizontal": "views/half_horizontal.liquid",
+    "half_vertical": "views/half_vertical.liquid",
+    "quadrant": "views/quadrant.liquid"
+  }
+}

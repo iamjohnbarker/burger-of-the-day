@@ -1,0 +1,13 @@
+{%- assign today_index = 'now' | date: '%s' | divided_by: 86400 | modulo: 416 -%}
+{%- assign burger = data[today_index] -%}
+<div class="view view--half_vertical">
+  <div class="layout layout--col layout--center">
+    <p class="text--base font--bold text--center">BURGER OF THE DAY</p>
+    <p class="text--xxlarge font--bold text--center my--4">{{ burger.name | remove: '"' }}</p>
+    <p class="text--xlarge text--center">{{ burger.price }}</p>
+  </div>
+  <div class="title_bar">
+    <span class="title">Bob's Burgers</span>
+    <span class="instance">S{{ burger.season }} · E{{ burger.episode }}</span>
+  </div>
+</div>
