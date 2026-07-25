@@ -1,0 +1,11 @@
+<div class="view view--quadrant">
+  <div class="layout layout--col layout--center">
+    <p class="text--small font--bold text--center">BURGER OF THE DAY</p>
+    <p class="text--large font--bold text--center my--4">{{ burger.name | remove: '"' }}</p>
+    <p class="text--large text--center">{{ burger.price }}</p>
+  </div>
+  <div class="title_bar">
+    <span class="title">Bob's Burgers</span>
+    <span class="instance">S{{ burger.season }} · E{{ burger.episode }}</span>
+  </div>
+</div>
